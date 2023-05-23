@@ -46,11 +46,9 @@ function App() {
         setWinner(null)
         setSymbol('X')
     };
-
     useEffect(() => {
         checkWinner()
     },[board])
-
     useEffect(() => {
         if (winner !== null) {
             setTimeout(() => {
